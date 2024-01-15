@@ -1,0 +1,23 @@
+* {
+    font-family: "Andale Mono", serif;
+}
+
+.heading {
+    display: flex;
+    border: red 2px solid;
+}
+
+.contents {
+    display: flex;
+    border: red 2px solid;
+}
+
+.options {
+    display: flex;
+    border: red 2px solid;
+}
+
+.box-container {
+    display: flex;
+    border: red 2px solid;
+}
