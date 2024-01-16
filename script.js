@@ -38,6 +38,25 @@ function etcha() {
         }
     }
     updateGrid(16); // Initialise the grid on page load
+
+    // Update the box colour on mouseover
+    gridContainer.onmouseover = function(event) {
+        let target = event.target;
+        target.style.background = 'black';
+    }
+
+    // Clear etcha on button press
+    const clearEtcha = document.querySelector(".mode-clear");
+    clearEtcha.addEventListener("click", function () {
+        const boxes = document.querySelectorAll(".box");
+        boxes.forEach(box => {
+            box.style.backgroundColor = 'white';
+        })
+    })
+
+    // Set fill colour
+
+
 }
 
 etcha();
