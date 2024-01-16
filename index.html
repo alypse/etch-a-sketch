@@ -11,7 +11,24 @@
 <div class="heading">Etcha-sketcha</div>
 
 <div class="contents">
-    <div class="options"></div>
+    <div class="options">
+        <button class="mode-rainbow">Rainbow (tbc)</button>
+        <button class="mode-blackonwhite">Black n White (tbc)</button>
+        <button class="mode-clear">Clear Etcha (tbc)</button>
+        <fieldset>
+            <legend>Select grid size</legend>
+            <div>
+                <input type="radio" id="gridCount1" name="gridCount" value=8 />
+                <label for="gridCount1">8x8</label>
+
+                <input type="radio" id="gridCount2" name="gridCount" value=16 checked/>
+                <label for="gridCount2">16x16</label>
+
+                <input type="radio" id="gridCount3" name="gridCount" value=32 />
+                <label for="gridCount3">32x32</label>
+            </div>
+        </fieldset>
+    </div>
     <div class="box-container"></div>
 </div>
 
