@@ -35,6 +35,9 @@ function etcha() {
             if (gridCount === 32) {
                 box.classList.add("thirty_two");
             }
+            if (gridCount === 64) {
+                box.classList.add("sixty_four")
+            }
         }
     }
     updateGrid(16); // Initialise the grid on page load

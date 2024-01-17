@@ -46,6 +46,7 @@
     background-color: white;
 }
 
+/*Scaling for box grid dimensions (HTML radio and updateGrid required)*/
 .eight {
     flex: 1 0 12.5%;
 }
@@ -56,6 +57,10 @@
 
 .thirty_two {
     flex: 1 0 3.125%;
+}
+
+.sixty_four {
+    flex: 1 0 1.5625%;
 }
 
 /*RADIO BUTTONS*/
