@@ -55,3 +55,67 @@
 .thirty_two {
     flex: 1 0 3.125%;
 }
+
+/*RADIO BUTTONS*/
+.gridSizeRadios {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0.5rem;
+    background-color: #EEE;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06);
+    padding: 0.25rem;
+    width: 300px;
+    font-size: 14px;
+}
+
+.gridSizeRadios .radio {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.gridSizeRadios .radio input {
+    display: none;
+}
+
+.gridSizeRadios .radio .name {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: none;
+    padding: .5rem 0;
+    color: rgba(51, 65, 85, 1);
+    transition: all .15s ease-in-out;
+}
+
+.gridSizeRadios .radio input:checked + .name {
+    background-color: #fff;
+    font-weight: 600;
+}
+
+/*BUTTONS*/
+.optionsButtons {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    background-color: #EEE;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06);
+    padding: 0.25rem;
+    width: 300px;
+    font-size: 14px;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #EEEEEE;
+    padding: .5rem 0;
+    color: rgba(51, 65, 85, 1);
+    transition: all .15s ease-in-out;
+}

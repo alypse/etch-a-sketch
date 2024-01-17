@@ -12,22 +12,28 @@
 
 <div class="contents">
     <div class="options">
-        <button class="mode-rainbow">Rainbow (tbc)</button>
-        <button class="mode-blackonwhite">Black n White (tbc)</button>
-        <button class="mode-clear">Clear Etcha</button>
-        <fieldset>
-            <legend>Select grid size</legend>
-            <div>
-                <input type="radio" id="gridCount1" name="gridCount" value=8 />
-                <label for="gridCount1">8x8</label>
+        <div class="optionsButtons">
+            <button class="mode-rainbow">Rainbow (tbc)</button>
+            <button class="mode-blackonwhite">Black n White (tbc)</button>
+            <button class="mode-clear">Clear Etcha</button>
+        </div>
+        <div class="gridSizeRadios">
+            <label class="radio">
+                <input class="radio" type="radio" id="gridCount1" name="gridCount" value=8 />
+                <span class="name">8x8</span>
+            </label>
 
-                <input type="radio" id="gridCount2" name="gridCount" value=16 checked/>
-                <label for="gridCount2">16x16</label>
+            <label class="radio">
+                <input class="radio" type="radio" id="gridCount2" name="gridCount" value=16 checked/>
+                <span class="name">16x16</span>
+            </label>
 
-                <input type="radio" id="gridCount3" name="gridCount" value=32 />
-                <label for="gridCount3">32x32</label>
-            </div>
-        </fieldset>
+            <label class="radio">
+                <input class="radio" type="radio" id="gridCount3" name="gridCount" value=32 />
+                <span class="name">32x32</span>
+            </label>
+        </div>
+
     </div>
     <div class="box-container"></div>
 </div>
