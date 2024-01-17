@@ -61,8 +61,10 @@ function etcha() {
     let defaultColour = document.querySelector("#mode-colour");
     let fillColour = defaultColour.value // Initialise colour for block fills
     const colour = document.querySelector("#mode-colour");
+    const colourHex = document.querySelector(".colourHex")
     colour.addEventListener("change",function () {
         fillColour = colour.value;
+        colourHex.innerText = `Colour: ${colour.value}`;
     })
 
 

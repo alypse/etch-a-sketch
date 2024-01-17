@@ -29,6 +29,13 @@
     /*border: red 2px solid;*/
 }
 
+.colourHex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .box-container {
     display: flex;
     flex-flow: row wrap;
