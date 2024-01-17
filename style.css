@@ -1,5 +1,6 @@
 * {
     font-family: "Andale Mono", serif;
+    background-color: #EEEEEE;
 }
 
 .heading {
@@ -7,8 +8,8 @@
     justify-content: center;
     font-size: 36px;
     font-weight: bold;
-    margin: 20px 0;
-    /*border: red 2px solid;*/
+    margin: 40px 0;
+
 }
 
 .contents {
@@ -17,14 +18,14 @@
     /*border: pink 2px solid;*/
 }
 
-.options {
+.optionsPanel {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     width: 300px;
     height: 600px;
-    margin-right: 50px;
+    /*margin-right: 50px;*/
     /*border: red 2px solid;*/
 }
 
@@ -34,14 +35,15 @@
     justify-content: space-evenly;
     width: 600px;
     height: 600px;
-    border: black 2px solid;
+    border: #d3d3d3 1px solid;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06);
+    margin-left: 30px;
 }
 
 .box {
     position: relative;
     box-sizing: border-box;
     background-color: white;
-    /*border: 1px solid black;*/
 }
 
 .eight {
@@ -70,12 +72,27 @@
     font-size: 14px;
 }
 
+.optionsRadios {
+    /*position: relative;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*border-radius: 0.5rem;*/
+    background-color: #EEE;
+    box-sizing: border-box;
+    /*box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06);*/
+    padding: 0.25rem;
+    width: 280px;
+    font-size: 14px;
+}
+
 .gridSizeRadios .radio {
     flex: 1 1 auto;
     text-align: center;
+    padding: 10px 0;
 }
 
-.gridSizeRadios .radio input {
+.gridSizeRadios .optionsRadios .radio input {
     display: none;
 }
 
@@ -101,6 +118,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     border-radius: 0.5rem;
     background-color: #EEE;
     box-sizing: border-box;
@@ -118,4 +136,21 @@ button {
     padding: .5rem 0;
     color: rgba(51, 65, 85, 1);
     transition: all .15s ease-in-out;
+}
+
+button:hover {
+    background-color: #ffffff;
+}
+
+/*button:focus,*/
+button:active {
+    background-color: rgba(255, 255, 255, 0.71);
+    transition: ease-out;
+}
+
+#mode-colour {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06);
+    height: 100px;
+    width: 100px;
+    margin: 10px 0;
 }

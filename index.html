@@ -11,10 +11,12 @@
 <div class="heading">Etcha-sketcha</div>
 
 <div class="contents">
-    <div class="options">
+    <div class="optionsPanel">
         <div class="optionsButtons">
-            <button class="mode-rainbow">Rainbow (tbc)</button>
-            <button class="mode-blackonwhite">Black n White (tbc)</button>
+            <div class="optionsRadios">
+                <label for="mode-colour">Choose a colour</label>
+                    <input type="color" id="mode-colour" name="Colour" value="#7FFFD4" />
+            </div>
             <button class="mode-clear">Clear Etcha</button>
         </div>
         <div class="gridSizeRadios">
@@ -22,18 +24,15 @@
                 <input class="radio" type="radio" id="gridCount1" name="gridCount" value=8 />
                 <span class="name">8x8</span>
             </label>
-
             <label class="radio">
                 <input class="radio" type="radio" id="gridCount2" name="gridCount" value=16 checked/>
                 <span class="name">16x16</span>
             </label>
-
             <label class="radio">
                 <input class="radio" type="radio" id="gridCount3" name="gridCount" value=32 />
                 <span class="name">32x32</span>
             </label>
         </div>
-
     </div>
     <div class="box-container"></div>
 </div>

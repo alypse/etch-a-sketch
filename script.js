@@ -42,7 +42,7 @@ function etcha() {
     // Update the box colour on mouseover
     gridContainer.onmouseover = function(event) {
         let target = event.target;
-        target.style.background = 'black';
+        target.style.background = `${fillColour}`;
     }
 
     // Clear etcha on button press
@@ -55,6 +55,12 @@ function etcha() {
     })
 
     // Set fill colour
+    let defaultColour = document.querySelector("#mode-colour");
+    let fillColour = defaultColour.value // Initialise colour for block fills
+    const colour = document.querySelector("#mode-colour");
+    colour.addEventListener("change",function () {
+        fillColour = colour.value;
+    })
 
 
 }
