@@ -1,5 +1,5 @@
 * {
-    font-family: "Andale Mono", serif;
+    font-family: "Cooper Black", sans-serif;
     background-color: #EEEEEE;
 }
 
@@ -71,6 +71,13 @@
 }
 
 /*RADIO BUTTONS*/
+.optionsSize {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
 .gridSizeRadios {
     position: relative;
     display: flex;
@@ -122,7 +129,7 @@
 
 .gridSizeRadios .radio input:checked + .name {
     background-color: #fff;
-    font-weight: 600;
+    /*font-weight: 600;*/
 }
 
 /*BUTTONS*/
